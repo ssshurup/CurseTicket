@@ -1,0 +1,29 @@
+﻿<Page x:Class="CurseTicket.Pages.AdminPages.AdminP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CurseTicket.Pages.AdminPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminP">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="600"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ButtonsBarGrid">
+            <StackPanel>
+                <Button x:Name="EmployeeBT" Content="Управление сотрудниками" Margin="5" Click="EmployeeBT_Click"/>
+                <Button x:Name="FlightBT" Content="Управление рейсами" Margin="5" Click="FlightBT_Click"/>
+                <Button x:Name="PartyBT" Content="Управление рабочей командой" Margin="5" ButtonBase.Click="PartyBT_Click" />
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom">
+                <Button x:Name="BackBT" Content="Выйти" Margin="10,5" Click="BackBT_Click"/>
+            </StackPanel>
+        </Grid>
+            <Image Source="/Images/LogoAir.png" Grid.Column="1"/>
+
+    </Grid>
+</Page>
